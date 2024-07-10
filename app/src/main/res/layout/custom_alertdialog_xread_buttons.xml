@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cashier_x_report"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button_rounded8"
+        android:drawableTint="@color/myColorIconAdminPriveleges"
+        android:elevation="4dp"
+
+        android:shadowColor="@color/myColorActionBar"
+        android:text="CHECK SALES"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/myColorButtonBlack"
+        app:drawableTopCompat="@drawable/ic_assignment_black_48px"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_endShift"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button_rounded8"
+        android:drawableTint="@color/myColorIconAdminPriveleges"
+        android:elevation="4dp"
+
+        android:textStyle="bold"
+
+android:layout_marginTop="10dp"
+        android:shadowColor="@color/myColorActionBar"
+        android:text="END SHIFT"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:drawableTopCompat="@drawable/ic_assignment_black_48px"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

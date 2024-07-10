@@ -1,0 +1,58 @@
+<resources>
+
+    <style name="Widget.Theme.MyApplication.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">#d1d1d1</item>
+        <item name="android:dividerHeight">0.5dp</item>
+    </style>
+
+    <style name="Widget.Theme.MyApplication.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+
+    <style name="DialogSlide" >
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_left</item>
+        <item name="android:windowIsFloating">false</item>
+
+<!--    <style name="Theme.MyApplication.Card.Layout" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+        <item name="android:windowFullscreen">true</item>
+
+
+
+        <!--        <item name="android:layout_marginRight">127dp</item>-->
+        <!--        <item name="android:layout_marginLeft">100dp</item>-->
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">match_parent</item>
+
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+
+        <item name="background">@android:color/transparent</item>
+
+
+
+
+
+    </style>
+
+    <style name="DialogSlide2" parent="Theme.AppCompat.Dialog" >
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:windowFullscreen">false</item>
+
+
+    </style>
+
+
+</resources>

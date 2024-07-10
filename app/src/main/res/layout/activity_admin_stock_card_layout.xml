@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_selectInfo"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_info"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_outline_info_24"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tv_dataTransNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_weight="6"/>
+
+        </LinearLayout>
+
+
+
+        <!-- Vertical Line Separator -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:id="@+id/tv_dataDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="4"/>
+
+        <!-- Vertical Line Separator -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:id="@+id/tv_dataTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="4"/>
+
+        <!-- Vertical Line Separator -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/tv_dataIn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="IN"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+        <!-- Vertical Line Separator -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_dataOut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="OUT"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+        <!-- Vertical Line Separator -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_dataBalance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="BALANCE"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="6"/>
+
+        <!-- Vertical Line Separator -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+
+        <TextView
+            android:id="@+id/tv_dataRemarks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="REMARKS"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="6"/>
+
+        <!-- Vertical Line Separator -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+
+</LinearLayout>

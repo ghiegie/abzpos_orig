@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/myColorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_typeOfCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="DEBIT CARD"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_typeOfCard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="327dp"
+
+
+
+
+
+
+            android:orientation="vertical">
+
+
+
+
+
+            <Spinner
+                android:id="@+id/spinnerBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:hint="Debit Card Company"
+                android:inputType="textCapCharacters"
+                android:visibility="gone"
+
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_CardOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:imeOptions="actionNext"
+                android:hint="Card Holder/Owner"
+
+                android:inputType="text"
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_DebitNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:hint="Card Number"
+
+                android:inputType="number"
+                android:digits="0123456789*"
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_DebitExpiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:hint="Card Expiry"
+
+                android:inputType="number"
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_CardApproval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:hint="Trace Number"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Java"
+                        android:textColor="@color/black"
+                        android:textStyle="italic|bold"
+                        android:layout_margin="1dp"
+                        android:text="SUB TOTAL"
+                        android:layout_marginBottom="0dp"
+
+                        android:gravity="start"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_weight=".5"
+                        android:background="@color/gray"
+                        android:textSize="20dp"
+                        android:elevation="2dp"
+                        android:layout_marginRight="5dp"
+                        android:text="CANCEL"
+
+                        android:textStyle="bold" />
+
+
+                    <!--                                <androidx.appcompat.widget.AppCompatButton-->
+                    <!--                                    android:id="@+id/btn_cashierFunction"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="match_parent"-->
+                    <!--                                    android:text="CASHIER FUNCTION" />-->
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Java"
+                        android:textColor="@color/black"
+                        android:textStyle="italic|bold"
+                        android:layout_margin="1dp"
+                        android:text="CASH TOTAL"
+                        android:layout_marginBottom="0dp"
+
+                        android:gravity="start"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_EnterDebit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+
+                        android:elevation="2dp"
+
+                        android:text="SUBMIT"
+                        android:background="@color/gray"
+                        android:textSize="20dp"
+
+                        android:textStyle="bold" />
+
+
+                    <!--                                <androidx.appcompat.widget.AppCompatButton-->
+                    <!--                                    android:id="@+id/btn_cashierFunction"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="match_parent"-->
+                    <!--                                    android:text="CASHIER FUNCTION" />-->
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

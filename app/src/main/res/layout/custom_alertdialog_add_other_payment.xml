@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rad_radGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rad_add"
+
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="ADD"/>
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rad_remove"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REMOVE"/>
+
+
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+
+
+            android:id="@+id/spinner_bankName"
+
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+            android:id="@+id/et_PaymentAutoID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:elevation="2dp"
+
+            android:hint="ID"
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_OtherPayment"
+            android:inputType="textCapSentences"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            android:hint="Other Payment Name"
+
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+            android:id="@+id/et_discName"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            android:hint="Discount Name"
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+
+
+
+
+
+
+            <CheckBox
+                android:id="@+id/cbox_allowReference"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+               android:onClick="allowReference_clicked"
+                android:paddingLeft="10dp"
+                android:text="Allow Reference"
+                android:textSize="17dp" />
+
+            <CheckBox
+                android:id="@+id/cbox_allowUserDetails"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:onClick="allowUserDetails_clicked"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allow User Details"/>
+
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CANCEL"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SAVE"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

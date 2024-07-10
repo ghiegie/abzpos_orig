@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:inputType="text"
+        android:id="@+id/et_discAutoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext_dialog"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"
+        android:elevation="2dp"
+
+        android:hint="ID"
+        android:textColor="@color/myColorEditTextDialogDisable"
+        android:textColorHint="@color/myColorDialogBG" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_discID"
+            android:inputType="text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            android:hint="Discount ID"
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+            android:id="@+id/et_discName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            android:hint="Discount Name"
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+
+
+        <RadioGroup
+            android:id="@+id/rad_radGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rad_scd"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="SCD DISCOUNT"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_weight="1"
+                android:id="@+id/rad_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="PWD DISCOUNT"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_weight="1"
+                android:id="@+id/rad_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="REGULAR DISCOUNT"/>
+
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/rad_radGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rad_setPercent"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="SET PERCENT ( % )"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_weight="1"
+                android:id="@+id/rad_setComputation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="SET COMPUTATION"/>
+
+
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/et_discountPercent"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_marginBottom="10dp"
+
+            android:elevation="2dp"
+            android:hint="Discount %"
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+            android:id="@+id/et_discountComputation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            android:visibility="gone"
+            android:text="TotalSelectedAmount"
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+        <RadioGroup
+            android:id="@+id/rad_radGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rad_normalDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NORMAL DISCOUNT" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_weight="1"
+                android:id="@+id/rad_specialDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPECIAL DISCOUNT"/>
+
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbox_excludeTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkbox_clicked"
+            android:text="Discount Exclude Tax"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CANCEL"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_addItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="ADD DISCOUNT"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

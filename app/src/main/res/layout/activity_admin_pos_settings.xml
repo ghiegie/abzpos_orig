@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.admin_pos_settings"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+
+        android:id="@+id/toolbar"
+        />
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="SHIFT NUMBER : "/>-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/et_shiftTotal"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text=""/>-->
+
+
+
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--      <Button-->
+    <!--          android:id="@+id/btn_save"-->
+    <!--          android:layout_width="wrap_content"-->
+    <!--          android:layout_height="wrap_content"-->
+    <!--          android:text="save"/>-->
+
+
+    <!--    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="90dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="9"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cashbox"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cashbox"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D04"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_addDiscountItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="MANAGE DISCOUNT"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="SUB TOTAL"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_deleteDiscount"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="DELETE DISCOUNT"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D08"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_discountSummary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Discount Summary"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D12"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_zeroOut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:text="ZERO OUT"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="6"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_paperCut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="HOURLY SALES"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D03"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_auditTrail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="AUDIT TRAIL"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D07"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_bank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="BANK NAME"
+
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D11"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_otherPayment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OTHER PAYMENT"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="3"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_printerConfig"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="PRINTER CONFIGURATION"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D02"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_clearReserve"
+                android:layout_width="match_parent"
+                android:text="Clear  Reserved  button"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D06"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_tenderReport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="TENDER REPORT"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D10"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_stockCard"
+                android:layout_width="match_parent"
+                android:text="Stock card"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text=""
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_gdrive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text="GOOGLE DRIVE"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D01"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_testEmail"
+                android:layout_width="match_parent"
+                android:text="EMAIL"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+                android:text="D09"
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_monthlyReading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="MONTHLY READING"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Java"
+                android:textColor="@color/black"
+                android:textStyle="italic|bold"
+                android:layout_margin="1dp"
+
+
+                android:layout_marginBottom="0dp"
+
+                android:gravity="start"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="match_parent"
+                android:text=""
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

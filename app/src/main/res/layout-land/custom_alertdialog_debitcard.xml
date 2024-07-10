@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/myColorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_command"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/customborder"
+
+            android:textStyle="bold|italic"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/tv_typeOfCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:text="DEBIT CARD"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_buttonList"
+
+
+            android:layout_width="match_parent"
+
+            android:layout_height="460dp"
+          />
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

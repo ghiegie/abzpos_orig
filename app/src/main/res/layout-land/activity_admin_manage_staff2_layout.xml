@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:ignore="MissingDefaultResource">
+
+ <LinearLayout
+     android:id="@+id/ll_accountLinear"
+     android:layout_margin="1dp"
+     android:layout_width="match_parent"
+
+     android:orientation="horizontal"
+    android:background="@color/gray"
+     android:layout_height="match_parent">
+
+     <TextView
+         android:layout_width="40dp"
+         android:layout_height="match_parent"
+         android:id="@+id/tv_accountID"
+         android:text="ID"
+         android:textSize="20dp"
+         android:gravity="center"
+android:background="@color/white"
+         android:textColor="@color/black"
+         android:layout_margin=".5dp"/>
+
+     <TextView
+         android:id="@+id/tv_accountNumber"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:layout_height="match_parent"
+         android:text="ACCOUNT NUMBER"
+         android:textSize="20dp"
+         android:gravity="center"
+         android:background="@color/white"
+         android:textColor="@color/black"
+         android:layout_margin=".5dp"/>
+
+     <TextView
+         android:id="@+id/tv_accountName"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:layout_height="match_parent"
+        android:text="ACCOUNT NAME"
+         android:gravity="center"
+         android:textSize="20dp"
+         android:background="@color/white"
+         android:textColor="@color/black"
+         android:layout_margin=".5dp"/>
+
+
+     <TextView
+         android:id="@+id/tv_accountPassword"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:layout_height="match_parent"
+         android:text="ACCOUNT PASSWORD"
+         android:inputType="numberPassword"
+         android:textSize="20dp"
+         android:background="@color/white"
+         android:gravity="center"
+         android:textColor="@color/black"
+         android:layout_margin=".5dp"/>
+
+
+
+
+
+
+     <androidx.appcompat.widget.SwitchCompat
+         android:id="@+id/sw_accountType"
+         android:layout_width="100dp"
+
+         android:layout_height="match_parent"
+         android:gravity="center"
+         android:paddingRight="20dp"
+        android:layout_gravity="center"
+         android:textColor="@color/black"
+         android:background="@color/white"
+         android:layout_margin=".5dp"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:layout_height="match_parent"
+         android:weightSum="3"
+         android:background="@color/white"
+         android:orientation="horizontal"
+         android:layout_margin=".5dp">
+
+         <androidx.appcompat.widget.AppCompatImageButton
+             android:id="@+id/ib_save"
+             android:layout_width="match_parent"
+             android:src="@drawable/ib_save"
+             android:visibility="invisible"
+             android:layout_height="match_parent"
+             android:layout_weight="1"/>
+         <androidx.appcompat.widget.AppCompatImageButton
+             android:id="@+id/ib_edit"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="invisible"
+             android:src="@drawable/ib_edit"
+             android:layout_weight="1"/>
+
+
+         <androidx.appcompat.widget.AppCompatImageButton
+             android:id="@+id/ib_remove"
+             android:src="@drawable/ib_remove"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"/>
+
+
+
+
+
+
+     </LinearLayout>
+
+<!--     <TextView-->
+<!--         android:layout_width="match_parent"-->
+<!--         android:layout_weight="1"-->
+<!--         android:layout_height="match_parent"-->
+<!--         android:background="@color/white"-->
+<!--         android:textSize="20dp"-->
+<!--         android:text="ACTION"-->
+<!--         android:gravity="center"-->
+<!--         android:textColor="@color/black"-->
+<!--         android:layout_margin=".5dp"/>-->
+
+
+
+
+
+
+
+ </LinearLayout>
+
+
+</LinearLayout>

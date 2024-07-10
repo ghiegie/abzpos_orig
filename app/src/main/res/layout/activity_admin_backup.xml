@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ADMIN.admin_backup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="BACK UP STORAGE : "/>
+        <Spinner
+            android:id="@+id/sp_storageList"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+           />
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="134dp"
+                android:layout_height="192dp"
+                android:src="@drawable/pos" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/black"
+                    android:text="BACK UP" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="53dp"
+                    android:src="@drawable/line2" />
+
+            </LinearLayout>
+
+             <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                 android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="15dp"
+                     android:textStyle="bold"
+                     android:layout_marginTop="20dp"
+                     android:textColor="@color/black"
+                     android:text="RESTORE BACK UP"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="134dp"
+                android:layout_height="192dp"
+                android:src="@drawable/database" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:text="Manual  Back Up"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:text="Restrore \n From \n Back up"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:text="SCHEDULE \n BACK UP"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CASHIER.cashier_shift"
+    android:orientation="vertical"
+
+
+    android:layout_centerHorizontal="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="200"
+            android:gravity="center"
+
+            android:layout_margin="5dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_margin="5dp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="150dp">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_cashier_check_sales"
+                        android:layout_width="150dp"
+
+                        android:layout_height="150dp"
+
+                        android:background="@drawable/custom_button_rounded8"
+                        android:drawableTint="@color/myColorIconAdminPriveleges"
+
+                        android:gravity="center"
+
+                        android:shadowColor="@color/myColorActionBar"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/myColorWhite"
+                        app:drawableTopCompat="@drawable/ic_monetization_on_black_48px">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:text=" CHECK \n SALES"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                >
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Java"
+                    android:textColor="@color/black"
+                    android:textStyle="italic|bold"
+                    android:layout_margin="1dp"
+                    android:text="RA / PO"
+                    android:layout_marginBottom="0dp"
+
+                    android:gravity="start"/>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="150dp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_cashier_cashinout"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+
+                        android:background="@drawable/custom_button_rounded8"
+                        android:drawableTint="@color/myColorIconAdminPriveleges"
+
+                        android:gravity="center"
+                        android:shadowColor="@color/myColorActionBar"
+                        android:text="CASH IN/OUT"
+                        android:textAllCaps="false"
+                        android:textColor="@color/myColorWhite"
+                        app:drawableTopCompat="@drawable/ic_monetization_on_black_48px">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text=" CASH \n IN/OUT"
+                        android:textColor="@color/white"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                >
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Java"
+                    android:textColor="@color/black"
+                    android:textStyle="italic|bold"
+                    android:layout_margin="1dp"
+                    android:text="BTN"
+                    android:layout_marginBottom="0dp"
+
+                    android:gravity="start"/>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="150dp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_cashier_receiving"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+
+                        android:background="@drawable/custom_button_rounded8"
+                        android:drawableTint="@color/myColorIconAdminPriveleges"
+
+                        android:gravity="center"
+                        android:shadowColor="@color/myColorActionBar"
+                        android:text="CASH IN/OUT"
+                        android:textAllCaps="false"
+                        android:textColor="@color/myColorWhite"
+                        app:drawableTopCompat="@drawable/ic_monetization_on_black_48px">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="RECEIVING"
+                        android:textColor="@color/white"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                >
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Java"
+                    android:textColor="@color/black"
+                    android:textStyle="italic|bold"
+                    android:layout_margin="1dp"
+                    android:text="PLU"
+                    android:layout_marginBottom="0dp"
+
+                    android:gravity="start"/>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="150dp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_cashier_transfer_out"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+
+                        android:background="@drawable/custom_button_rounded8"
+                        android:drawableTint="@color/myColorIconAdminPriveleges"
+
+                        android:gravity="center"
+                        android:shadowColor="@color/myColorActionBar"
+                        android:text="CASH IN/OUT"
+                        android:textAllCaps="false"
+                        android:textColor="@color/myColorWhite"
+                        app:drawableTopCompat="@drawable/ic_monetization_on_black_48px">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="TRANSFER OUT"
+                        android:textColor="@color/white"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:gravity="center"
+                >
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_height="150dp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_cashier_return_exchange"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+
+                        android:background="@drawable/custom_button_rounded8"
+                        android:drawableTint="@color/myColorIconAdminPriveleges"
+                        android:gravity="center"
+                        android:shadowColor="@color/myColorActionBar"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/myColorWhite"
+                        app:drawableTopCompat="@drawable/ic_monetization_on_black_48px">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="RETURN \n AND EXCHANGE"
+                        android:textColor="@color/white"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:gravity="center"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone">
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_cashier_refund"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+
+                        android:background="@drawable/custom_button_rounded8"
+                        android:drawableTint="@color/myColorIconAdminPriveleges"
+
+                        android:gravity="center"
+                        android:shadowColor="@color/myColorActionBar"
+                        android:text="CASH IN/OUT"
+                        android:textAllCaps="false"
+                        android:textColor="@color/myColorWhite"
+                        app:drawableTopCompat="@drawable/ic_monetization_on_black_48px">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="TENDER \n REPORT"
+                        android:textColor="@color/white"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Java"
+                    android:textColor="@color/black"
+                    android:textStyle="italic|bold"
+                    android:layout_margin="1dp"
+                    android:text="X/TIME DW"
+                    android:layout_marginBottom="0dp"
+
+                    android:gravity="start"/>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="150dp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_cashier_x_report"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/custom_button_rounded8"
+                        android:drawableTint="@color/myColorIconAdminPriveleges"
+
+                        android:shadowColor="@color/myColorActionBar"
+                        android:text="X-READ"
+                        android:textAllCaps="false"
+                        android:textColor="@color/myColorWhite"
+                        app:drawableTopCompat="@drawable/ic_assignment_black_48px">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="X-READ"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                >
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_height="150dp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_cashier_z_report"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/custom_button_rounded8"
+
+
+                        android:drawableTint="@color/myColorIconAdminPriveleges"
+                        android:gravity="center"
+
+
+                        android:shadowColor="@color/myColorActionBar"
+                        android:text="Z-READ"
+                        android:textAllCaps="false"
+                        android:textColor="@color/myColorWhite"
+                        app:drawableTopCompat="@drawable/ic_assignment_black_48px">
+
+                    </androidx.appcompat.widget.AppCompatImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="Z-READ"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+
+                android:gravity="end"
+                android:text="ABZPOSS  RETAIL v1.00  "/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

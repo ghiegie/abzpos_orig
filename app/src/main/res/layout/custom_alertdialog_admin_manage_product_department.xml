@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal">
+
+   <LinearLayout
+       android:visibility="gone"
+       android:layout_width="match_parent"
+       android:layout_weight="2"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:background="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_weight="1"
+
+               android:layout_margin="1dp"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="ITEM"
+               android:id="@+id/menuTXT"/>
+
+           <TextView
+
+               android:layout_weight="3"
+               android:layout_margin="1dp"
+               android:gravity="right"
+               android:textSize="20dp"
+               android:text="DEPT"
+               android:textStyle="bold"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+
+       </LinearLayout>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+
+           android:layout_height="match_parent"
+           android:id="@+id/rv_categoryList"/>
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_weight="1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:id="@+id/imgb_exit"
+            android:src="@drawable/ic_baseline_close_24"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="KEYPAD LAYER"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:id="@+id/sp_layer"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+           android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD04"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D04"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD03"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D03"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD02"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D02"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD01"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D01"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD08"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D08"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD07"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D07"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD07"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD06"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D06"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD05"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D05"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD12"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D12"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD11"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D11"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD10"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D10"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD09"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D09"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameUP"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:visibility="gone"
+                            android:text="PAGE \n UP"
+                            />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_weight="20"
+                            android:id="@+id/iv_itemUP"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/arrow_upward"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameDown"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="PAGE \n DOWN"
+                            />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:src="@drawable/arrow_downward_24"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD14"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D14"
+                            />
+                        <TextView
+
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/button_frameD13"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_weight="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="D13"
+                            />
+                        <TextView
+                            android:layout_weight="20"
+                            android:id="@+id/tv_itemD13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

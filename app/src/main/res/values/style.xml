@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="myFullscreenAlertDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">      //no actionbar, but status bar exists
+        <item name="android:windowFullscreen">true</item>                       //remove status bar
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>        //smooth animation
+        <item name="colorAccent">@color/colorAccent</item>                      //change button text color
+    </style>
+
+
+    <style name="myFullscreenAlertDialogStyle2" parent="Theme.AppCompat.Light.NoActionBar">      //no actionbar, but status bar exists
+<!--        <item name="android:windowFullscreen">true</item>-->
+        //remove status bar
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>        //smooth animation
+        <item name="colorAccent">@color/colorAccent</item>                      //change button text color
+    </style>
+
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="myFullscreenAlertDialogStyle3">      //no actionbar, but status bar exists
+
+        //remove status bar
+        <item  name="android:layout_margin">30dp</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>        //smooth animation
+        <item name="colorAccent">@color/colorAccent</item>                      //change button text color
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/color_white</item>
+    </style>
+
+
+<!--    <style name="MyAlertDialog" parent="Theme.AppCompat.Dialog">-->
+<!--&lt;!&ndash;        <item name="android:windowBackground">@android:color/transparent</item>&ndash;&gt;-->
+<!--        <item name="android:layout_gravity">center</item>-->
+
+<!--        <item name="android:layout_width">500dp</item>-->
+
+<!--        <item name="android:layout_height">200dp</item>-->
+<!--    </style>-->
+
+    <style name="FullscreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/FullscreenDialogAnimation</item>
+    </style>
+
+    <style name="FullscreenDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+
+
+</resources>

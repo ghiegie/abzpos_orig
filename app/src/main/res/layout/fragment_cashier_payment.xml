@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CASHIER.cashier_payment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:layout_weight="2">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_orderList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_marginLeft="3dp"
+
+
+                                android:layout_marginTop="5dp"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Transaction Details"
+                                android:textAlignment="center"
+                                android:textColor="@color/myColorButtonBlack"
+                                android:textSize="20dp" />
+                            <LinearLayout
+                                android:id="@+id/ll_forDiscountType"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="10dp"
+                                    android:background="@color/myColorDialogBG"
+                                    android:orientation="horizontal"
+                                    android:padding="16dp">
+
+                                </View>
+                                <TextView
+                                    android:id="@+id/lbl_discountLabel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+
+                                    android:textAlignment="center"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="20dp" />
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_margin="10dp"
+                                    android:background="@color/myColorDialogBG"
+                                    android:orientation="horizontal"
+                                    android:padding="16dp">
+
+                                </View>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:layout_weight="2"
+                                    android:text="Total :"
+
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/lbl_total"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="2"
+                                    android:text="VATable Sales :"
+                                    android:singleLine="true"
+                                    android:layout_gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/lbl_subtotal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="2"
+                                    android:text="Discount"
+                                    android:singleLine="true"
+                                    android:layout_gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/lbl_discount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:layout_weight="2"
+                                    android:text="VAT Amount :"
+
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/lbl_tax"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:layout_weight="2"
+                                    android:text="VAT Exempt sales"
+                                    android:singleLine="true"
+
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_vatExemptSale"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:layout_gravity="end"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:layout_weight="2"
+                                    android:text="Zero-Rated Sales"
+                                    android:singleLine="true"
+
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_zeroRatedSales"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:layout_weight="2"
+                                    android:text="Less VAT"
+                                    android:singleLine="true"
+
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_lessVat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Service Charge"
+                                    android:singleLine="true"
+                                    android:layout_gravity="start"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_serviceCharge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:layout_gravity="end"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+                            <View
+                                android:id="@+id/view_line"
+                                android:visibility="invisible"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/myColorDialogBG"
+                                android:orientation="horizontal"
+                                android:padding="16dp">
+
+                            </View>
+
+                            <LinearLayout
+                                android:id="@+id/ll_paymentList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_paymentList"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/myColorDialogBG"
+                                android:orientation="horizontal"
+                                android:padding="16dp">
+
+                            </View>
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/lbl_dc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:layout_weight="2"
+                                    android:text="Net Due :"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="30sp"/>
+
+
+
+                                <TextView
+                                    android:id="@+id/lbl_dueFinal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="10dp"
+
+                                    android:layout_weight="1"
+                                    android:text="0.00"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/myColorButtonBlack"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+
+
+
+                                <TextView
+                                    android:id="@+id/lbl_due"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+
+                                    android:visibility="gone"
+
+                                    android:text="0.00"
+
+
+
+                                    />
+
+                            </LinearLayout>
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/myColorDialogBG"
+                                android:orientation="horizontal"
+                                android:padding="16dp">
+
+                            </View>
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ABZPOSS  RETAIL v1.00"
+                            android:paddingBottom="50dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:gravity="right"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/et_cash"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/custom_edittext_dialog"
+                            android:gravity="right"
+                            android:hint="Php 0.00"
+                            android:digits="0123456789.,"
+                            android:inputType="numberDecimal"
+
+                            android:padding="10dp"
+                            android:textColor="@color/myColorEditTextDialogDisable"
+                            android:textColorHint="@color/myColorEditTextDialogDisable"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/cashPayment"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                android:text="CASH"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:cornerRadius="0dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/creditCardPayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="CREDIT"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:cornerRadius="0dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/debitCardPayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="DEBIT"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:cornerRadius="0dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_otherPayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="OTHER PAYMENT"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:cornerRadius="0dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_discountList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="DISCOUNT TRANSACTION"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:cornerRadius="0dp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_diplomatPayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="DIPLOMAT"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                app:cornerRadius="0dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <!--                            <LinearLayout-->
+                    <!--                                android:id="@+id/ll_tender"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_weight="1"-->
+                    <!--                                android:orientation="vertical">-->
+
+
+                    <!--                                <RadioGroup-->
+                    <!--                                    android:id="@+id/rg_discount"-->
+                    <!--                                    android:layout_width="match_parent"-->
+                    <!--                                    android:layout_height="match_parent"-->
+
+                    <!--                                    android:gravity="center"-->
+                    <!--                                    android:orientation="horizontal"-->
+                    <!--                                    android:padding="3dp">-->
+
+                    <!--                                    <RadioButton-->
+                    <!--                                        android:id="@+id/rb_ndisc"-->
+                    <!--                                        android:layout_width="match_parent"-->
+                    <!--                                        android:layout_height="wrap_content"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:checked="true"-->
+                    <!--                                        android:text="No discount" />-->
+
+                    <!--                                    <RadioButton-->
+                    <!--                                        android:id="@+id/rb_rpdisc"-->
+                    <!--                                        android:layout_width="match_parent"-->
+                    <!--                                        android:layout_height="wrap_content"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:text="Senior/PWD" />-->
+
+                    <!--                                    <RadioButton-->
+                    <!--                                        android:id="@+id/rb_ddisc"-->
+                    <!--                                        android:layout_width="match_parent"-->
+                    <!--                                        android:layout_height="wrap_content"-->
+                    <!--                                        android:layout_weight="1"-->
+                    <!--                                        android:text="Diplomat" />-->
+                    <!--                                </RadioGroup>-->
+                    <!--                            </LinearLayout>-->
+
+                    <!--                            <Button-->
+                    <!--                                android:id="@+id/btn_completeTransaction"-->
+                    <!--                                android:layout_width="match_parent"-->
+                    <!--                                android:layout_weight="1"-->
+                    <!--                                android:layout_height="wrap_content"-->
+
+                    <!--                                android:background="@drawable/custom_button_login"-->
+                    <!--                                android:elevation="4dp"-->
+
+                    <!--                                android:onClick="print"-->
+                    <!--                                android:text="Complete Transaction"-->
+                    <!--                                android:textColor="@color/myColorWhite"-->
+                    <!--                                android:textSize="20dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+
+
+
+
+
+
+                    >
+
+                    <com.abztrakinc.ABZPOS.MyKeyboard
+                        android:id="@+id/keyboard2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

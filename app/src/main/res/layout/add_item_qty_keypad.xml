@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/tv_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ITEM QUANTITY"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/imgb_exit"
+                android:src="@drawable/ic_baseline_close_24"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_labelKeypad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="INSERT QUANTITY"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customborder"
+
+                android:textSize="30dp"
+                android:cursorVisible="false"
+
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="30dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="8"
+                android:textSize="30dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:id="@+id/btn_9"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="9"
+                android:textSize="30dp"/>
+            <!--        <ImageButton-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:src="@drawable/ic_baseline_backspace"-->
+            <!--            -->
+            <!--            />-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="30dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="5"
+                android:textSize="30dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="6"
+                android:textSize="30dp"/>
+            <!--        <ImageButton-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:src="@drawable/ic_baseline_backspace"-->
+            <!--            -->
+            <!--            />-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="30dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="2"
+                android:textSize="30dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="3"
+                android:textSize="30dp"/>
+            <!--        <ImageButton-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:src="@drawable/ic_baseline_backspace"-->
+            <!--            -->
+            <!--            />-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/ibtn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_backspace"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ibtn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_check_24"
+
+                />
+            <!--        <ImageButton-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:src="@drawable/ic_baseline_backspace"-->
+            <!--            -->
+            <!--            />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

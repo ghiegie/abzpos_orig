@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/myColorDialogBG"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+
+                android:id="@+id/et_remarks"
+                android:hint="Discount Quantity"
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG"
+                android:lines="7"
+                android:elevation="2dp"
+                android:gravity="top"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+
+
+
+
+
+                android:singleLine="true"
+
+                android:layout_weight="1"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_insert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPDATE REMARKS"
+                    android:layout_weight="1">
+
+                </androidx.appcompat.widget.AppCompatButton>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_deleteRemarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DELETE REMARKS">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/myColorCardViewCashier"
+                android:weightSum="6"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

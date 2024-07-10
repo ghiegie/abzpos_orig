@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/customborder"
+        android:id="@+id/ll_linearLayout"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_buttonNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Java"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:text="PLU 12"
+
+            android:gravity="start"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_buttonDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Ben-Beng Wafer Chocolate Caramel"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/iv_check"
+                android:layout_width="20dp"
+                android:visibility="gone"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/check" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

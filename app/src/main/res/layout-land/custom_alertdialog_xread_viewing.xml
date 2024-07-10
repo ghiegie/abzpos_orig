@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <!-- Other views or components can be added here -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:text="Close" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <!-- Vertical line (left side) -->
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_xreadView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+
+                        android:background="@color/white"
+                        android:text="100" />
+
+                </ScrollView>
+                <!-- TextView with equal margins -->
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+          android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <!-- Other views or components can be added here -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_printXreadCopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:text="Print COPY" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_printXread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:text="Proceed X-READING" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

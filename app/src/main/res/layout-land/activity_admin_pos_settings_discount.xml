@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingDefaultResource">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:layout_width="match_parent"
+
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:gravity="end"
+                 android:layout_height="wrap_content">
+                 <ImageButton
+                     android:id="@+id/btn_close"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ic_baseline_close_24"/>
+
+                 <ImageButton
+                     android:id="@+id/btn_removeItem"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ic_delete_black_36px"/>
+
+                 <ImageButton
+                     android:id="@+id/btn_addItem"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ic_baseline_check_24"/>
+
+
+             </LinearLayout>
+
+
+
+             <LinearLayout
+                 android:id="@+id/ll_showDiscountlist"
+                 android:layout_width="match_parent"
+
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:weightSum="5"
+                     android:background="@color/black"
+                     android:orientation="horizontal">
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="2"
+                         android:background="@color/white"
+                         android:layout_margin="1dp"
+                         android:paddingLeft="5dp"
+                         android:text="Category"/>
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="1dp"
+                         android:background="@color/white"
+                         android:paddingLeft="5dp"
+                         android:layout_weight="2"
+                         android:text="Discount ID"/>
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_margin="1dp"
+                         android:paddingLeft="5dp"
+                         android:background="@color/white"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:text="Description"/>
+
+                 </LinearLayout>
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/rv_discList"
+                     android:layout_width="match_parent"
+                     android:scrollbars="vertical"
+                     android:layout_height="match_parent"/>
+
+
+
+             </LinearLayout>
+
+
+
+         </LinearLayout>
+
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+
+
+             android:orientation="vertical"
+             android:paddingTop="20dp">
+
+             <androidx.appcompat.widget.AppCompatEditText
+                 android:id="@+id/et_discAutoID"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="10dp"
+                 android:background="@drawable/custom_edittext_dialog"
+                 android:elevation="2dp"
+                 android:enabled="false"
+                 android:hint="ID"
+                 android:inputType="text"
+
+                 android:textColor="@color/myColorEditTextDialogDisable"
+                 android:textColorHint="@color/myColorDialogBG"
+                 android:visibility="gone" />
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:weightSum="3"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="2"
+                     android:layout_margin="3dp"
+                     android:orientation="horizontal">
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_weight="2"
+                         android:paddingLeft="10dp"
+                         android:text="DISCOUNT ID"
+
+                         android:textColor="@color/black" />
+
+                     <androidx.appcompat.widget.AppCompatEditText
+                         android:id="@+id/et_discID"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="13dp"
+                         android:layout_marginBottom="10dp"
+
+                         android:layout_weight="1"
+                         android:background="@drawable/custom_edittext_dialog"
+                         android:elevation="2dp"
+                         android:hint="Discount ID"
+                         android:imeOptions="actionDone"
+                         android:inputType="text"
+                         android:textAllCaps="true"
+                         android:textColor="@color/myColorEditTextDialogDisable"
+                         android:textColorHint="@color/myColorDialogBG" />
+
+                 </LinearLayout>
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:layout_margin="3dp"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:paddingLeft="10dp"
+                         android:layout_weight="4"
+                         android:text="DISCOUNT NAME"
+
+                         android:textColor="@color/black" />
+
+                     <androidx.appcompat.widget.AppCompatEditText
+                         android:id="@+id/et_discName"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="13dp"
+                         android:layout_marginBottom="10dp"
+                         android:layout_weight="1"
+                         android:background="@drawable/custom_edittext_dialog"
+                         android:elevation="2dp"
+                         android:hint="Discount Name"
+                         android:imeOptions="actionDone"
+                         android:inputType="text"
+                         android:textAllCaps="true"
+                         android:textColor="@color/myColorEditTextDialogDisable"
+                         android:textColorHint="@color/myColorDialogBG" />
+
+
+                 </LinearLayout>
+
+
+
+
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:orientation="vertical">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="3dp"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_weight="2"
+                             android:paddingLeft="10dp"
+                             android:text="Default Value ( % )"
+
+                             android:textColor="@color/black" />
+
+                         <androidx.appcompat.widget.AppCompatEditText
+                             android:id="@+id/et_discountPercent"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:background="@drawable/custom_edittext_dialog"
+                             android:digits="0123456789."
+                             android:focusableInTouchMode="true"
+                             android:gravity="end"
+                             android:imeOptions="actionDone"
+
+
+                             android:inputType="numberDecimal"
+                             android:text="5.00"
+                             android:textColor="@color/black"
+                             android:textColorHint="@color/myColorDialogBG" />
+
+                         <androidx.appcompat.widget.AppCompatEditText
+                             android:id="@+id/et_discountComputation"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginBottom="10dp"
+                             android:background="@drawable/custom_edittext_dialog"
+                             android:elevation="2dp"
+                             android:inputType="text"
+                             android:text="TotalSelectedAmount"
+                             android:textColor="@color/myColorEditTextDialogDisable"
+                             android:textColorHint="@color/myColorDialogBG"
+                             android:visibility="gone" />
+
+                     </LinearLayout>
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="horizontal">
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_margin="3dp"
+                             android:layout_weight="1"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center"
+                                 android:layout_weight="2"
+                                 android:paddingLeft="10dp"
+                                 android:text="Min. Transaction Amount "
+
+                                 android:textColor="@color/black" />
+
+                             <EditText
+                                 android:id="@+id/et_minTransAmount"
+                                 android:layout_width="match_parent"
+
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 android:background="@drawable/custom_edittext_dialog"
+                                 android:digits="0123456789."
+                                 android:focusableInTouchMode="true"
+                                 android:gravity="end"
+                                 android:imeOptions="actionDone"
+                                 android:inputType="numberDecimal"
+
+                                 android:text="0.00" />
+                         </LinearLayout>
+
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_margin="3dp"
+                             android:layout_weight="1"
+                             android:orientation="horizontal">
+
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center"
+                                 android:layout_weight="2"
+                                 android:paddingLeft="10dp"
+                                 android:text="Max. Transaction Amount "
+
+                                 android:textColor="@color/black" />
+
+                             <EditText
+                                 android:id="@+id/et_maxTransAmount"
+                                 android:layout_width="match_parent"
+
+                                 android:layout_height="wrap_content"
+                                 android:layout_weight="1"
+                                 android:background="@drawable/custom_edittext_dialog"
+                                 android:digits="0123456789."
+                                 android:focusableInTouchMode="true"
+                                 android:gravity="end"
+                                 android:imeOptions="actionDone"
+                                 android:inputType="numberDecimal"
+
+                                 android:text="0.00" />
+                         </LinearLayout>
+
+                     </LinearLayout>
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="3dp"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_weight="2"
+                             android:paddingLeft="10dp"
+                             android:text="Max. Discount Amount "
+
+                             android:textColor="@color/black" />
+
+                         <EditText
+                             android:id="@+id/et_maxDiscAmount"
+                             android:layout_width="match_parent"
+
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:background="@drawable/custom_edittext_dialog"
+                             android:digits="0123456789."
+                             android:focusableInTouchMode="true"
+                             android:gravity="end"
+                             android:imeOptions="actionDone"
+                             android:inputType="numberDecimal"
+
+                             android:text="0.00" />
+                     </LinearLayout>
+                     <!--                 <LinearLayout-->
+                     <!--                     android:layout_width="match_parent"-->
+                     <!--                     android:layout_height="wrap_content"-->
+                     <!--                     android:layout_margin="3dp"-->
+                     <!--                     android:orientation="horizontal">-->
+                     <!--                     <TextView-->
+                     <!--                         android:layout_width="match_parent"-->
+                     <!--                         android:layout_height="wrap_content"-->
+                     <!--                         android:layout_gravity="center"-->
+                     <!--                         android:paddingLeft="10dp"-->
+                     <!--                         android:layout_weight="2"-->
+                     <!--                         android:text="Max. Transaction Amount "-->
+
+                     <!--                         android:textColor="@color/black"/>-->
+                     <!--                     <EditText-->
+                     <!--                         android:id="@+id/et_maxTransAmount"-->
+                     <!--                         android:layout_width="match_parent"-->
+                     <!--                         android:layout_weight="1"-->
+                     <!--                         android:background="@drawable/custom_edittext_dialog"-->
+                     <!--                         android:inputType="numberDecimal"-->
+                     <!--                         android:digits="0123456789."-->
+                     <!--                         android:focusableInTouchMode="true"-->
+                     <!--                         android:imeOptions="actionDone"-->
+                     <!--                         android:text="0.00"-->
+                     <!--                         android:gravity="end"-->
+                     <!--                         android:layout_height="wrap_content"/>-->
+                     <!--                 </LinearLayout>-->
+                     <!--                 <LinearLayout-->
+                     <!--                     android:layout_width="match_parent"-->
+                     <!--                     android:layout_height="wrap_content"-->
+                     <!--                     android:layout_margin="1dp"-->
+                     <!--                     android:orientation="horizontal">-->
+                     <!--                     <TextView-->
+                     <!--                         android:layout_width="match_parent"-->
+                     <!--                         android:layout_height="wrap_content"-->
+                     <!--                         android:text="Max. Discount Amount "-->
+                     <!--                         android:paddingLeft="10dp"-->
+                     <!--                         android:layout_weight="2"-->
+                     <!--                         android:layout_gravity="center"-->
+
+                     <!--                         android:textColor="@color/black"/>-->
+                     <!--                     <EditText-->
+                     <!--                         android:id="@+id/et_maxDiscAmount"-->
+                     <!--                         android:layout_weight="1"-->
+                     <!--                         android:layout_width="match_parent"-->
+                     <!--                         android:background="@drawable/custom_edittext_dialog"-->
+                     <!--                         android:inputType="numberDecimal"-->
+                     <!--                         android:digits="0123456789."-->
+                     <!--                         android:text="0.00"-->
+                     <!--                         android:focusableInTouchMode="true"-->
+                     <!--                         android:imeOptions="actionDone"-->
+                     <!--                         android:gravity="end"-->
+                     <!--                         android:layout_height="wrap_content"/>-->
+
+                     <!--                 </LinearLayout>-->
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="4"
+                         android:orientation="horizontal">
+
+                         <CheckBox
+                             android:id="@+id/cbox_excludeTax"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:onClick="checkbox_clicked"
+                             android:text="Discount Exclude Tax" />
+
+
+                         <CheckBox
+                             android:id="@+id/cbox_salesExcludeTax"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:onClick="checkbox2_clicked"
+                             android:text="Sales Exclude Tax" />
+
+                         <CheckBox
+                             android:id="@+id/cbox_ProRated"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:onClick="checkbox3_clicked"
+                             android:text="Pro Rated Discount" />
+
+                         <CheckBox
+                             android:id="@+id/cbox_OpenDiscount"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_weight="1"
+                             android:onClick="checkbox4_clicked"
+                             android:text="Open Discount" />
+
+
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:orientation="vertical">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="3dp"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_weight="2"
+                             android:paddingLeft="10dp"
+                             android:text="Category"
+
+                             android:textColor="@color/black" />
+
+                         <Spinner
+                             android:id="@+id/sp_category"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:layout_weight="1"
+                             android:background="@drawable/custom_edittext_dialog"
+                             android:gravity="end"
+                             android:text="0.00" />
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="3dp"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_weight="2"
+                             android:paddingLeft="10dp"
+                             android:text="Discount Type"
+
+                             android:textColor="@color/black" />
+
+                         <Spinner
+                             android:id="@+id/sp_discountType"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:layout_weight="1"
+                             android:background="@drawable/custom_edittext_dialog"
+                             android:gravity="end"
+                             android:text="0.00" />
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="3dp"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_weight="2"
+                             android:paddingLeft="10dp"
+                             android:text="Label"
+
+                             android:textColor="@color/black" />
+
+                         <Spinner
+                             android:id="@+id/sp_label"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:layout_weight="1"
+                             android:background="@drawable/custom_edittext_dialog"
+                             android:gravity="end"
+                             android:text="0.00" />
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="3dp"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_weight="2"
+                             android:paddingLeft="10dp"
+                             android:text="Receipt option"
+
+                             android:textColor="@color/black" />
+
+                         <Spinner
+                             android:id="@+id/sp_receiptOption"
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:layout_weight="1"
+                             android:background="@drawable/custom_edittext_dialog"
+                             android:gravity="end"
+                             android:text="0.00" />
+
+                     </LinearLayout>
+
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+     </RelativeLayout>
+
+
+
+
+
+
+ </LinearLayout>
+
+
+
+
+
+</ScrollView>

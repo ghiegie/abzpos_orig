@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ADMIN.admin_manage_staff">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay"
+        android:background="@color/myColorBackgroundOrange"
+      >
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="10dp"
+            android:text="Manage staff"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:weightSum="2"
+       >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:tint="@color/myColorIconLock"
+                app:srcCompat="@drawable/ic_person_black_48px" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edittext_login"
+                android:elevation="2dp"
+                android:enabled="true"
+                android:hint="Name of employee"
+                android:inputType="text"
+                android:maxLines="1"
+                android:shadowColor="@color/myColorActionBar"
+                android:textColor="@color/myColorWhite"
+                android:textColorHint="@color/myColorActionBar" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etSearchNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/custom_edittext_login"
+                android:elevation="2dp"
+                android:hint="Enter User Number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:shadowColor="@color/myColorActionBar"
+                android:textColor="@color/myColorWhite"
+                android:textColorHint="@color/myColorBackgroundOrange" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/custom_edittext_login"
+                android:elevation="2dp"
+
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:shadowColor="@color/myColorActionBar"
+                android:textColor="@color/myColorWhite"
+                android:textColorHint="@color/myColorActionBar" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpdate"
+
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/custom_button_login"
+        android:elevation="2dp"
+        android:shadowColor="@color/myColorActionBar"
+        android:text="UPDATE"
+        android:textColor="@color/myColorWhite"
+        android:textStyle="bold"
+      />
+
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/myColorDialogBG"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+            android:id="@+id/categoryID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edittext_dialog"
+            android:elevation="2dp"
+            android:hint="Category ID"
+
+
+
+
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG"
+            android:elevation="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoryName"
+            android:hint="Category Name"
+            android:singleLine="true"
+
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="text"
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG"
+            android:elevation="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoryDesc"
+            android:hint="Category Description"
+            android:singleLine="true"
+
+            android:layout_weight="1"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:elevation="2dp"
+                android:textColor="@color/myColorBackgroundWhite"
+                android:textStyle="bold"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSaveAddProduct"
+                android:text="SAVE"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:elevation="2dp"
+                android:textColor="@color/myColorBackgroundWhite"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCancelAddProduct"
+                android:text="CANCEL"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:elevation="2dp"
+                android:textColor="@color/myColorBackgroundWhite"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".5"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubCatg"
+                android:text="SUB CATEGORY"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

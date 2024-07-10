@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:id="@+id/linear_orderlist_layout2"
+    >
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_linearLayout1"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/ll_linearLayout2"
+                    android:background="@color/black"
+                    android:weightSum="7"
+
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+
+                    >
+
+
+
+                    <TextView
+
+                        android:id="@+id/tv_itemID"
+                        android:layout_width="40dp"
+
+                        android:background="@color/white"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+
+                        android:layout_marginTop="1dp"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="1dp"
+
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_itemText"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+
+                        android:background="@color/white"
+                        android:gravity="left"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="1dp"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_itemDoubleWidth"
+                        android:layout_width="100dp"
+                        android:visibility="gone"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_weight="3"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text=""
+                        android:textSize="17dp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

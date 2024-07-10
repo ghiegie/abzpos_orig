@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/item1"
+        android:title="LOGOUT"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item2"
+        android:title="PRINT TRANSACTION"
+        app:showAsAction="never" />
+<!--    <item-->
+<!--        android:id="@+id/item3"-->
+<!--        android:title="ADD PRODUCT"-->
+<!--        app:showAsAction="never" >-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/sub3item1"-->
+<!--                android:title="CATEGORY"-->
+<!--                app:showAsAction="never" >-->
+
+<!--                <menu>-->
+<!--                    <item-->
+<!--                        android:id="@+id/sub3sub1Item1"-->
+<!--                        android:title="ADD CATEGORY"-->
+<!--                        app:showAsAction="never"/>-->
+
+<!--                    <item-->
+<!--                        android:id="@+id/sub3sub1Item2"-->
+<!--                        android:title="DELETE CATEGORY"-->
+<!--                        app:showAsAction="never"/>-->
+<!--                </menu>-->
+
+<!--            </item>-->
+<!--            <item-->
+<!--                android:id="@+id/sub3item2"-->
+<!--                android:title="SUBCATEGORY"-->
+<!--                app:showAsAction="never" />-->
+<!--            <item-->
+<!--                android:id="@+id/sub3item3"-->
+<!--                android:title="ITEM"-->
+<!--                app:showAsAction="never" >-->
+<!--                <menu>-->
+<!--                    <item-->
+<!--                        android:id="@+id/sub3sub3Item1"-->
+<!--                        android:title="ADD PRODUCT"-->
+<!--                        app:showAsAction="never"/>-->
+
+<!--                    <item-->
+<!--                        android:id="@+id/sub3sub3Item2"-->
+<!--                        android:title="DELETE PRODUCT"-->
+<!--                        app:showAsAction="never"/>-->
+<!--                </menu>-->
+<!--            </item>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/item4"-->
+<!--        android:title="SHOW LOGS"-->
+<!--        app:showAsAction="never" />-->
+
+</menu>

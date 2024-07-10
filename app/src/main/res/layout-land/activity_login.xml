@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LOGIN.LoginActivity"
+
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+
+
+            android:src="@drawable/retailwhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="479dp"
+                android:layout_height="61dp"
+                android:background="@drawable/custom_edittext_login"
+                android:ems="10"
+                android:hint="User Number"
+                android:maxLines="1"
+                android:shadowColor="@color/myColorActionBar"
+                android:singleLine="true"
+                android:text="001"
+
+
+                android:textColor="@color/myColorWhite"
+                android:textColorHint="@color/myColorBackgroundOrange"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.431"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.864" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="478dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext_login"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:shadowColor="@color/myColorActionBar"
+                android:singleLine="true"
+                android:text="123"
+
+                android:textColor="@color/myColorWhite"
+                android:textColorHint="@color/myColorBackgroundOrange"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.434"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <CheckBox
+
+                    android:id="@+id/chkAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/myColorLoginEditText"
+                    android:text="Admin"
+                    android:visibility="gone"
+                    android:textColor="@color/myColorIconLock"
+                    android:textSize="25dp"
+                    app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.172"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                    app:layout_constraintVertical_bias="0.48" />
+
+                <CheckBox
+                    android:id="@+id/chkOrdering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/myColorLoginEditText"
+                    android:text="Ordering Station"
+                    android:textColor="@color/myColorIconLock"
+                    android:textSize="25dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.172"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                    app:layout_constraintVertical_bias="0.48" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="482dp"
+                    android:layout_height="59dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_login"
+                    android:elevation="2dp"
+                    android:shadowColor="@color/myColorActionBar"
+                    android:text="LOGIN"
+                    android:textColor="@color/myColorWhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.417"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                    app:layout_constraintVertical_bias="0.48" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_exitPOS"
+                    android:layout_width="482dp"
+                    android:layout_height="59dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button_login"
+                    android:elevation="2dp"
+                    android:shadowColor="@color/myColorActionBar"
+                    android:text="EXIT"
+                    android:textColor="@color/myColorWhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.417"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                    app:layout_constraintVertical_bias="0.48" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,1519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.admin_manage_report"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_report"
+
+        android:id="@+id/toolbar_journal"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+            <HorizontalScrollView
+                android:id="@+id/scrollview"
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+                                    android:padding="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="\n\nDATE \n\n" />
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:visibility="gone"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+
+
+                                    android:text="TEXTVIEW" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="\nBeginning \n SI/OR No \n\n" />
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+
+                                    android:text="TEXTVIEW" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:background="#d3d3d3"
+                                    android:layout_marginBottom="1dp"
+                                    android:padding="1dp"
+                                    android:gravity="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+
+                                    android:text="\nEnding \n SI/OR No \n\n" />
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:visibility="gone"
+
+                                    android:text="TEXTVIEW" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#0e87cc"
+                                    android:textSize="20dp"
+                                    android:padding="1dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="\nGrand Accum \n Ending  \nBalance\n" />
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    android:text="TEXTVIEW" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#0e87cc"
+                                    android:textSize="20dp"
+                                    android:padding="1dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="\nGrand Accum \n  Beginning \n Balance \n" />
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:visibility="gone"
+
+                                    android:text="TEXTVIEW" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:padding="13dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#add8e6"
+                                    android:gravity="center"
+                                    android:text="Sales Issued \n W/ MANUAL \n SI/OR (per RR \n16-2018)" />
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+
+
+                                    android:text="0" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:padding="2dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#0e87cc"
+                                    android:gravity="center"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:text="\n GROSS SALES \n for The \n Day \n" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"  android:textSize="20dp"
+                                    android:textStyle="bold"
+
+
+                                    android:text="TEXTVIEW" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#ece75f"
+                                    android:textSize="20dp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="\n VATable \n Sales\n\n" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:text="TEXTVIEW"
+                                    android:textSize="20dp"
+
+
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#ece75f"
+                                    android:padding="2dp"
+                                    android:gravity="center"
+                                    android:text="\n VAT \n Amount \n\n" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+
+
+                                    android:text="TEXTVIEW" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:background="#ece75f"
+                                    android:padding="2dp"
+                                    android:gravity="center"
+                                    android:text="\nVat \n Exempt\n Sales\n" />
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+
+
+                                    android:text="TEXTVIEW" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+
+                                    android:textSize="20dp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:background="#ece75f"
+                                    android:text="\nZero \nRated \nSales\n" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+
+
+                                    android:text="TEXTVIEW" />
+
+
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#fa9c1b"
+
+                                    android:textSize="20dp"
+                                    android:padding="5dp"
+                                    android:gravity="center"
+                                    android:layout_margin="1dp"
+                                    android:textColor="@color/black"
+
+                                    android:textStyle="bold"
+                                    android:text="Deduction"/>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Discount"
+                                                android:layout_margin="1dp"
+                                                android:textColor="@color/black"
+                                                android:gravity="center"
+                                                android:textSize="20dp"
+                                                android:padding="5dp"
+                                                android:textStyle="bold"
+                                                android:background="#fa9c1b"
+                                                />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal">
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@color/teal_200"
+                                                    android:layout_weight="1"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+
+                                                        android:layout_width="150dp"
+                                                        android:layout_height="wrap_content"
+
+                                                        android:layout_marginLeft="1dp"
+                                                        android:layout_marginTop="1dp"
+                                                        android:layout_marginRight="1dp"
+                                                        android:layout_marginBottom="1dp"
+                                                        android:textSize="20dp"
+                                                        android:textStyle="bold"
+                                                        android:padding="10dp"
+                                                        android:background="#fa9c1b"
+                                                        android:gravity="center"
+                                                        android:text="SC" />
+
+                                                    <TextView
+                                                        android:visibility="gone"
+                                                        android:layout_width="150dp"
+                                                        android:layout_height="50dp"
+
+                                                        android:layout_marginLeft="1dp"
+                                                        android:layout_marginTop="1dp"
+                                                        android:textSize="20dp"
+                                                        android:textStyle="bold"
+                                                        android:layout_marginRight="1dp"
+                                                        android:layout_marginBottom="1dp"
+                                                        android:background="@color/white"
+                                                        android:gravity="center"
+
+
+                                                        android:text="TEXTVIEW" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@color/teal_200"
+                                                    android:layout_weight="1"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="150dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="1dp"
+                                                        android:layout_marginTop="1dp"
+                                                        android:layout_marginRight="1dp"
+                                                        android:textSize="20dp"
+                                                        android:textStyle="bold"
+                                                        android:padding="10dp"
+                                                        android:layout_marginBottom="1dp"
+                                                        android:background="#fa9c1b"
+                                                        android:gravity="center"
+                                                        android:text="PWD Discount" />
+
+                                                    <TextView
+                                                        android:visibility="gone"
+                                                        android:layout_width="150dp"
+                                                        android:layout_height="50dp"
+
+                                                        android:layout_marginLeft="1dp"
+                                                        android:layout_marginTop="1dp"
+                                                        android:textSize="20dp"
+                                                        android:textStyle="bold"
+
+                                                        android:layout_marginRight="1dp"
+                                                        android:layout_marginBottom="1dp"
+                                                        android:background="@color/white"
+                                                        android:gravity="center"
+
+
+                                                        android:text="TEXTVIEW" />
+
+
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_weight="1"
+                                                    android:background="@color/teal_200"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="150dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="1dp"
+                                                        android:layout_marginTop="1dp"
+                                                        android:textSize="20dp"
+                                                        android:textStyle="bold"
+                                                        android:layout_marginRight="1dp"
+                                                        android:layout_marginBottom="1dp"
+                                                        android:background="#fa9c1b"
+                                                        android:gravity="center"
+                                                        android:padding="10dp"
+                                                        android:text="Others" />
+
+                                                    <TextView
+                                                        android:visibility="gone"
+                                                        android:layout_width="150dp"
+                                                        android:layout_height="50dp"
+
+                                                        android:layout_marginLeft="1dp"
+                                                        android:layout_marginTop="1dp"
+                                                        android:textSize="20dp"
+                                                        android:textStyle="bold"
+
+                                                        android:layout_marginRight="1dp"
+                                                        android:layout_marginBottom="1dp"
+                                                        android:background="@color/white"
+                                                        android:gravity="center"
+
+
+                                                        android:text="TEXTVIEW" />
+
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/teal_200"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:textSize="20dp"
+                                                android:padding="6dp"
+                                                android:textStyle="bold"
+
+                                                android:gravity="center"
+                                                android:background="#fa9c1b"
+                                                android:text="\nReturns\n" />
+
+                                            <TextView
+                                                android:visibility="gone"
+                                                android:layout_width="150dp"
+                                                android:layout_height="50dp"
+
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:background="@color/white"  android:textSize="20dp"
+                                                android:textStyle="bold"
+                                                android:gravity="center"
+
+
+                                                android:text="0.00" />
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/teal_200"
+                                            android:orientation="vertical">
+
+                                            <TextView
+
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold"
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:background="#fa9c1b"
+                                                android:gravity="center"
+                                                android:padding="6dp"
+                                                android:text=" \nVoid\n" />
+
+                                            <TextView
+                                                android:visibility="gone"
+                                                android:layout_width="150dp"
+                                                android:layout_height="50dp"
+
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold"
+
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:background="@color/white"
+                                                android:gravity="center"
+
+
+                                                android:text="0.00" />
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/teal_200"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+
+                                                android:textSize="20dp"
+                                                android:textStyle="bold"
+                                                android:gravity="center"
+                                                android:padding="6dp"
+                                                android:background="#fa9c1b"
+                                                android:text="\nTotal Deductions" />
+
+                                            <TextView
+                                                android:visibility="gone"
+                                                android:layout_width="150dp"
+                                                android:layout_height="50dp"
+
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+                                                android:textSize="20dp"
+                                                android:textStyle="bold"
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:background="@color/white"
+                                                android:gravity="center"
+
+
+                                                android:text="0.00" />
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#449348"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:padding="5dp"
+
+                                    android:layout_margin="1dp"
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black"
+                                    android:text="Adjustments On Vat"
+                                    android:gravity="center"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Discount"
+                                            android:layout_margin="1dp"
+                                            android:textColor="@color/black"
+                                            android:gravity="center"
+                                            android:textSize="20dp"
+                                            android:padding="5dp"
+                                            android:textStyle="bold"
+                                            android:background="#449348"
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_weight="1"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:background="@color/teal_200"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="1dp"
+                                                    android:layout_marginTop="1dp"
+                                                    android:layout_marginRight="1dp"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:textSize="20dp"
+                                                    android:textStyle="bold"
+                                                    android:padding="10dp"
+                                                    android:background="#449348"
+                                                    android:gravity="center"
+                                                    android:text="SC" />
+
+                                                <TextView
+                                                    android:visibility="gone"
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="50dp"
+
+                                                    android:layout_marginLeft="1dp"
+                                                    android:layout_marginTop="1dp"
+                                                    android:textSize="20dp"
+                                                    android:textStyle="bold"
+                                                    android:layout_marginRight="1dp"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:background="@color/white"
+                                                    android:gravity="center"
+
+
+                                                    android:text="0.00" />
+
+
+
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@color/teal_200"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="1dp"
+                                                    android:layout_marginTop="1dp"
+                                                    android:layout_marginRight="1dp"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:textSize="20dp"
+                                                    android:textStyle="bold"
+                                                    android:padding="10dp"
+                                                    android:background="#449348"
+                                                    android:gravity="center"
+                                                    android:text="PWD"  />
+
+                                                <TextView
+                                                    android:visibility="gone"
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="50dp"
+
+                                                    android:layout_marginLeft="1dp"
+                                                    android:layout_marginTop="1dp"
+                                                    android:textSize="20dp"
+                                                    android:textStyle="bold"
+                                                    android:layout_marginRight="1dp"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:background="@color/white"
+                                                    android:gravity="center"
+
+                                                    android:text="0.00" />
+
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@color/teal_200"
+                                                android:layout_weight="1"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="1dp"
+                                                    android:layout_marginTop="1dp"
+                                                    android:layout_marginRight="1dp"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:textSize="20dp"
+                                                    android:textStyle="bold"
+                                                    android:padding="10dp"
+                                                    android:background="#449348"
+                                                    android:gravity="center"
+                                                    android:text="Others"  />
+
+                                                <TextView
+                                                    android:visibility="gone"
+                                                    android:layout_width="150dp"
+                                                    android:layout_height="50dp"
+
+                                                    android:layout_marginLeft="1dp"
+                                                    android:layout_marginTop="1dp"
+                                                    android:textSize="20dp"
+                                                    android:textStyle="bold"
+                                                    android:layout_marginRight="1dp"
+                                                    android:layout_marginBottom="1dp"
+                                                    android:background="@color/white"
+                                                    android:text="0.00"
+                                                    android:gravity="center"/>
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/teal_200"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+
+                                                android:textSize="20dp"
+                                                android:padding="17dp"
+                                                android:textStyle="bold"
+
+                                                android:gravity="center"
+                                                android:background="#449348"
+
+                                                android:text="Vat On Returns" />
+
+                                            <TextView
+                                                android:visibility="gone"
+                                                android:layout_width="150dp"
+                                                android:layout_height="50dp"
+
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:background="@color/white"  android:textSize="20dp"
+                                                android:textStyle="bold"
+                                                android:gravity="center"
+
+
+                                                android:text="0.00" />
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/teal_200"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:textSize="20dp"
+                                                android:padding="28dp"
+                                                android:textStyle="bold"
+
+
+                                                android:background="#449348"
+                                                android:gravity="center"
+                                                android:text="Others" />
+
+                                            <TextView
+                                                android:visibility="gone"
+                                                android:layout_width="150dp"
+                                                android:layout_height="50dp"
+
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:background="@color/white"  android:textSize="20dp"
+                                                android:textStyle="bold"
+                                                android:gravity="center"
+
+
+                                                android:text="0.00"/>
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@color/teal_200"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:textSize="20dp"
+                                                android:padding="16dp"
+                                                android:textStyle="bold"
+                                                android:background="#449348"
+                                                android:gravity="center"
+                                                android:text="Total Vat Adj." />
+
+                                            <TextView
+                                                android:visibility="gone"
+                                                android:layout_width="150dp"
+                                                android:layout_height="50dp"
+
+                                                android:layout_marginLeft="1dp"
+                                                android:layout_marginTop="1dp"
+
+                                                android:layout_marginRight="1dp"
+                                                android:layout_marginBottom="1dp"
+                                                android:background="@color/white"  android:textSize="20dp"
+                                                android:textStyle="bold"
+                                                android:gravity="center"
+
+
+                                                android:text="0.00"/>
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="Vat \n Payable" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+
+
+                                    android:text="0.00" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="Net Sales" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+
+
+                                    android:text="0.00" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="Sales \n Overrun/ \nOverFlow" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+
+
+                                    android:text="0.00" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="Total \n Income \n Sales" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+
+
+                                    android:text="0.00" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="Reset \n Counter" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+
+
+                                    android:text="0" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="Z- \n Counter" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+
+
+                                    android:text="0" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="150dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#d3d3d3"
+
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="Remarks" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"  android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+
+
+
+                                    android:text="" />
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/sv_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

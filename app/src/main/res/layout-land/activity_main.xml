@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+
+
+    tools:context=".MainActivity">
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:theme="@style/Theme.MyApplication.AppBarOverlay"-->
+<!--        android:background="@color/myColorBackgroundOrange">-->
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:minHeight="?actionBarSize"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Tinda-POS"-->
+<!--            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />-->
+
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:background="@color/white"
+
+
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/Java"
+                android:gravity="start"
+                android:textSize="10dp"
+                android:text="INVOICE"
+                android:textColor="@color/black"
+
+                android:textStyle="italic|bold" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/invoice_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+
+                android:textSize="25dp"
+                android:layout_marginRight="1dp"
+
+                android:background="@color/gray"
+                android:text="INVOICE PAGE"
+                app:cornerRadius="0dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/Java"
+                android:gravity="start"
+                android:textSize="10dp"
+                android:text="PAYMENT"
+                android:textColor="@color/black"
+
+                android:textStyle="italic|bold" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/payment_fragment"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:background="@color/gray"
+            android:text="PAYMENT PAGE"
+            app:cornerRadius="0dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/Java"
+                android:gravity="start"
+                android:textSize="10dp"
+                android:text="SHIFT"
+                android:textColor="@color/black"
+
+                android:textStyle="italic|bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shift_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:background="@color/gray"
+            android:text="SHIFT PAGE"
+            app:cornerRadius="0dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

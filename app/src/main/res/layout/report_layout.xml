@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_beginningOR"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_endingOR"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_accumEndBal"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_accumBegBal"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:background="@color/white"
+                    android:gravity="center"
+
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_salesIssuedManual"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+
+
+                    android:text="0" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_grossSales"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"  android:textSize="20dp"
+                    android:textStyle="bold"
+
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_vatableSales"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_vatAmount"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_vatExemptSale"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+
+
+                    android:text="TEXTVIEW" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_zeroRatedSales"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+
+
+                    android:text="TEXTVIEW" />
+
+
+
+
+
+                    </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/teal_200"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+
+
+                                    <TextView
+                                        android:id="@+id/tv_seniorDiscount"
+                                        android:layout_width="150dp"
+                                        android:layout_height="50dp"
+
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+
+
+                                        android:text="TEXTVIEW" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/teal_200"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+
+
+                                    <TextView
+                                        android:id="@+id/tv_pwdDiscount"
+                                        android:layout_width="150dp"
+                                        android:layout_height="50dp"
+
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold"
+
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+
+
+                                        android:text="TEXTVIEW" />
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/teal_200"
+                                    android:orientation="vertical">
+
+
+
+                                    <TextView
+                                        android:id="@+id/tv_otherDiscount"
+                                        android:layout_width="150dp"
+                                        android:layout_height="50dp"
+
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_marginTop="1dp"
+                                        android:textSize="20dp"
+                                        android:textStyle="bold"
+
+                                        android:layout_marginRight="1dp"
+                                        android:layout_marginBottom="1dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+
+
+                                        android:text="TEXTVIEW" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/teal_200"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_returns"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"  android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+
+
+                                android:text="0.00" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:background="@color/teal_200"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_void"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"
+                                android:gravity="center"
+
+
+                                android:text="0.00" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/teal_200"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_totalDeduction"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"
+                                android:gravity="center"
+
+
+                                android:text="0.00" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#449348"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/teal_200"
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:id="@+id/tv_scOnVat"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+
+
+                                    android:text="0.00" />
+
+
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/tv_pwdOnVat"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+
+                                    android:text="0.00" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:id="@+id/tv_othersOnVat"
+                                    android:layout_width="150dp"
+                                    android:layout_height="50dp"
+
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="@color/white"
+                                    android:text="0.00"
+                                    android:gravity="center"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/teal_200"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_vatOnReturns"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"  android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+
+
+                                android:text="0.00" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/teal_200"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_othersOnvat2"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"  android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+
+
+                                android:text="0.00"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/teal_200"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tv_totVatAdjOnVat"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="@color/white"  android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+
+
+                                android:text="0.00"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_vatPayable"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+
+                    android:text="0.00" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_netSales"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+
+                    android:text="0.00" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_salesOverRunFlow"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+
+                    android:text="0.00" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_totalIncomeSales"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+
+                    android:text="0.00" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_resetCounter"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+
+                    android:text="0" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_zCounter"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+
+                    android:text="0" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_remarks"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/white"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+
+
+
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

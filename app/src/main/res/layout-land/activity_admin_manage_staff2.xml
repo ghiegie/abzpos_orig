@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/ib_addnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ib_addnew"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:gravity="end"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_accountLinear"
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal"
+        android:background="@color/gray"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_accountID"
+            android:text="ID"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_margin=".5dp"/>
+
+        <TextView
+            android:id="@+id/tv_accountNumber"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="ACCOUNT NUMBER"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_margin=".5dp"/>
+
+        <TextView
+            android:id="@+id/tv_accountName"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="USER NAME"
+            android:gravity="center"
+
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_margin=".5dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_accountPassword"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="ACCOUNT PASSWORD"
+            android:textSize="20dp"
+
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_margin=".5dp"/>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_accountType"
+            android:layout_width="100dp"
+
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="ADMIN"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_margin=".5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textSize="20dp"
+            android:text="ACTION"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_margin=".5dp"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:id="@+id/rv_manageStaff"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/gray"
+            android:descendantFocusability="afterDescendants"
+            android:scrollbarSize="10dp"
+            android:fadeScrollbars="false"
+            />
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

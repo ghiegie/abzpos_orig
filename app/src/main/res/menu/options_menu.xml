@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item
+        android:id="@+id/item1"
+        android:title="SET DEPARTMENT BUTTON"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item2"
+        android:title="CLEAR DEPARTMENT BUTTON"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item3"
+        android:title="ADD PRODUCT"
+        app:showAsAction="never" >
+        <menu>
+            <item
+                android:id="@+id/sub3item1"
+                android:title="CATEGORY"
+                app:showAsAction="never" >
+
+                <menu>
+                    <item
+                        android:id="@+id/sub3sub1Item1"
+                        android:title="ADD CATEGORY"
+                        app:showAsAction="never"/>
+
+                    <item
+                        android:id="@+id/sub3sub1Item2"
+                        android:title="DELETE CATEGORY"
+                        app:showAsAction="never"/>
+                </menu>
+
+            </item>
+            <item
+                android:id="@+id/sub3item2"
+                android:title="SUBCATEGORY"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sub3item3"
+                android:title="ITEM"
+                app:showAsAction="never" >
+                <menu>
+                    <item
+                        android:id="@+id/sub3sub3Item1"
+                        android:title="ADD PRODUCT"
+                        app:showAsAction="never"/>
+
+                    <item
+                        android:id="@+id/sub3sub3Item2"
+                        android:title="DELETE PRODUCT"
+                        app:showAsAction="never"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/item4"
+        android:title="ADD BATCH PRODUCT"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/item5"
+        android:title="ITEM DATABASE"
+        app:showAsAction="never" >
+        <menu>
+            <item
+                android:id="@+id/importDB"
+                android:title="IMPORT ITEM DATABASE"
+                app:showAsAction="never" >
+
+
+
+            </item>
+            <item
+                android:id="@+id/exportDB"
+                android:title="EXPORT ITEM DATABASE"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

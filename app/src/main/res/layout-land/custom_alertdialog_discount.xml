@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/myColorDialogBG"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center_vertical"
+
+              android:layout_marginRight="10dp"
+               android:text="QUANTITY"
+               />
+
+           <androidx.appcompat.widget.AppCompatEditText
+
+               android:id="@+id/et_discQty"
+               android:hint="Discount Quantity"
+               android:textColor="@color/myColorEditTextDialogDisable"
+               android:textColorHint="@color/myColorDialogBG"
+               android:elevation="2dp"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/custom_edittext_dialog"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+
+
+
+
+               android:singleLine="true"
+
+               android:layout_weight="1"/>
+       </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="AMOUNT" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/myColorCardViewCashier"
+                android:weightSum="6"
+                >
+
+                <androidx.appcompat.widget.AppCompatSpinner
+
+                    android:textColor="@color/myColorEditTextDialogDisable"
+                    android:textColorHint="@color/myColorDialogBG"
+                    android:elevation="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DiscountSpinner"
+
+                    android:hint="SubCategory Name"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="5"
+                    />
+
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+
+                    android:id="@+id/et_discAmount"
+                    android:hint="Discount Amount"
+                    android:textColor="@color/myColorEditTextDialogDisable"
+                    android:textColorHint="@color/myColorDialogBG"
+                    android:elevation="2dp"
+
+                    android:background="@drawable/custom_edittext_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:singleLine="true"
+
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <com.abztrakinc.ABZPOS.MyKeyboard
+                android:id="@+id/keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

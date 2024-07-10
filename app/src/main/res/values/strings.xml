@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="table">TABLE #</string>
+    <string name="title_activity_admin_manage_other_payment">admin_manage_other_payment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="google_oauth_client_id">294433670786-tte3iti4ivmf3ncd4k2cd52b3egfkeg7.apps.googleusercontent.com</string>
+
+    <string name="permission_description">Allows access to the content provider to retrieve and modify  stored by the ABZPOS application.</string>
+
+    <string name="permission_label">Access Content Provider Permission</string>
+    <string name="permission_access_content_provider">com.abztrakinc.ABZPOS.permission.ACCESS_CONTENT_PROVIDER</string>
+
+
+    <!--    <string name="google_oauth_client_id">806331500465-3f3li7e18f20ajrld8af9evg7elumnpo.apps.googleusercontent.com</string>-->
+</resources>

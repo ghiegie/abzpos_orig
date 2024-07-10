@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="3">
+
+        <!-- Invoice Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/invoice_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="INVOICE PAGE"
+                android:textSize="18sp"
+                android:background="@color/gray"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+        <!-- Payment Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/payment_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="PAYMENT PAGE"
+                android:textSize="18sp"
+                android:background="@color/gray"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+        <!-- Shift Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/shift_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="SHIFT PAGE"
+                android:textSize="18sp"
+                android:background="@color/gray"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FrameLayout Section -->
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

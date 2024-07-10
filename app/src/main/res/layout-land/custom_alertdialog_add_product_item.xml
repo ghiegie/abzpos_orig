@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ADD CATEGORY"
+
+        android:textSize="17dp"
+
+        android:layout_weight="1"
+        android:textStyle="bold"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_SubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ADD SUB-CATEGORY"
+        android:textSize="17dp"
+
+        android:layout_weight="1"
+        android:textStyle="bold"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="ADD ITEM"
+
+        android:textSize="17dp"
+
+        android:layout_weight="1"
+        android:textStyle="bold"/>
+
+</LinearLayout>

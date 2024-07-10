@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_discountSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/teal_700"
+        android:layout_weight="5">
+
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test1"
+            android:textSize="17dp"
+            android:layout_margin="1dp"
+           android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_weight="2"/>
+        <TextView
+            android:id="@+id/tv_discID"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="test1"
+            android:paddingLeft="5dp"
+            android:layout_margin="1dp"
+            android:textSize="17dp"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_margin="1dp"
+            android:id="@+id/tv_desc"
+            android:paddingLeft="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:text="test1"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.admin_audit_trail"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbar"
+
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABZTRAK INC."
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2/F 670 SGT. BUMATAY ST. PLAIN VIEW, MANDALUYONG CITY."
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="008-184-146-000"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABSPOSS V.1"
+
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0000000000"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00000000000000000"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date and Time generated"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_width="150dp"
+                android:id="@+id/sp_type"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_generate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GENERATE"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_discountType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Sales Book"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_ItemNumber"
+                android:layout_width="50dp"
+
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+
+                android:layout_marginTop="1dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="1dp"
+
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="DATE"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="NAME OF SENIOR"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="SC ID No."
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="SI No."
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:text="Sales (inclusive of vat)"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:text="VAT Amount"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="VAT Exempt Sales"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Discount"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:text="Net Sales"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+
+                    />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rv_auditTrailList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

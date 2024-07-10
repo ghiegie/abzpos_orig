@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/myColorDialogBG"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_typeOfCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Number of PAX"
+
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_noPax"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="7dp"
+            android:textSize="30dp"
+            android:background="@drawable/custom_edittext_dialog"
+            android:elevation="2dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textColor="@color/myColorEditTextDialogDisable"
+            android:textColorHint="@color/myColorDialogBG" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/Java"
+                    android:gravity="start"
+                    android:text="SUB TOTAL"
+                    android:textColor="@color/black"
+
+                    android:textStyle="italic|bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_cancelCustInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+
+                    android:layout_weight=".5"
+                    android:background="@color/myColorStatusBar"
+                    android:elevation="2dp"
+                    android:text="CANCEL"
+
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/myColorDialogBG"
+                    android:textColor="@color/black"
+                    android:textStyle="italic|bold"
+                    android:layout_margin="1dp"
+                    android:text=""
+                    android:layout_marginBottom="0dp"
+
+                    android:gravity="start"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_addNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:layout_weight=".5"
+                    android:background="@color/myColorDialogBG"
+
+                    android:elevation="2dp"
+                    android:text=""
+                    android:layout_marginLeft="1dp"
+
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Java"
+                    android:textColor="@color/black"
+                    android:textStyle="italic|bold"
+                    android:layout_margin="1dp"
+                    android:text="CASH TOTAL"
+                    android:layout_marginBottom="0dp"
+
+                    android:gravity="start"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_saveCustInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_weight=".5"
+                    android:background="@color/checkout"
+
+                    android:elevation="2dp"
+                    android:text="NeXT"
+                    android:layout_marginLeft="1dp"
+
+                    android:textStyle="bold" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Java"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:layout_margin="1dp"
+            android:text="SUB TOTAL"
+            android:layout_marginBottom="0dp"
+
+            android:gravity="start"/>
+
+    <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+
+
+
+            android:layout_height="150dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_endShift"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:background="@drawable/custom_button_rounded8"
+            android:drawableTint="@color/myColorIconAdminPriveleges"
+
+            android:gravity="center"
+            android:shadowColor="@color/myColorActionBar"
+            android:text="CASH IN/OUT"
+            android:textAllCaps="false"
+            android:textColor="@color/myColorWhite"
+            app:drawableTopCompat="@drawable/ic_monetization_on_black_48px">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="E N D \n S H I F T"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Java"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:layout_margin="1dp"
+            android:text="CASH TOTAL"
+            android:layout_marginBottom="0dp"
+
+            android:gravity="start"/>
+
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+
+
+        android:layout_height="150dp">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_zRead"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:background="@drawable/custom_button_rounded8"
+            android:drawableTint="@color/myColorIconAdminPriveleges"
+
+            android:gravity="center"
+            android:shadowColor="@color/myColorActionBar"
+            android:text="CASH IN/OUT"
+            android:textAllCaps="false"
+            android:textColor="@color/myColorWhite"
+            app:drawableTopCompat="@drawable/ic_monetization_on_black_48px">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=" Z  R E A D"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

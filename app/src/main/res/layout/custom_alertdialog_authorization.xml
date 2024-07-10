@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null">
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_marginTop="50dp"
+            android:id="@+id/et_adminID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:hint="ID"/>
+        <EditText
+            android:id="@+id/et_adminPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:hint="PASSWORD"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="1"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="2"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="3"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="6"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="7"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="8"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="9"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_erase"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="del"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_0"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="0"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_clear"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:text="Clear"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_enter"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="50dp"
+                android:text="ENTER"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

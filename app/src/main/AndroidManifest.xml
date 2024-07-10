@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingLeanbackLauncher">
+    <!-- Define uses-permission to allow access to the Content Provider -->
+    <!-- <uses-permission android:name="com.abztrakinc.ABZPOS.permission.ACCESS_CONTENT_PROVIDER" /> -->
+    <uses-permission android:name="com.abztrakinc.ABZPOS.permission.ACCESS_CONTENT_PROVIDER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.usb.host" />
+    <uses-feature android:name="android.hardware.usb.accessory" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_MEDIA_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.usb.host" /> <!-- To support printerlibrary on Android R -->
+    <queries>
+        <package android:name="woyou.aidlservice.jiuiv5" />
+    </queries>
+
+    <permission
+        android:name="com.abztrakinc.ABZPOS.permission.ACCESS_CONTENT_PROVIDER"
+        android:description="@string/permission_description"
+        android:label="@string/permission_label"
+        android:protectionLevel="normal" />
+
+    <application
+        android:name=".BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/pos_icon_21"
+        android:label="ABZPOSS V.1"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:windowSoftInputMode="adjustPan|adjustResize">
+        <activity
+            android:name=".Diner.SampleLogin"
+            android:exported="true">
+
+
+
+        </activity>
+<!--        <activity-->
+<!--            android:name=".Diner.SampleLogin"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".Diner.loginDiner"
+            android:exported="false" /> <!-- <provider -->
+        <!-- android:name=".content_provider.MyContentProvider" -->
+        <!-- android:authorities="com.abztrakinc.ABZPOS.provider" -->
+        <!-- android:exported="true" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.content.action.PROVIDER_CHANGED" /> -->
+        <!-- <data android:scheme="content" -->
+        <!-- android:authority="com.abztrakinc.ABZPOS.provider" /> -->
+        <!-- </intent-filter> -->
+        <!-- </provider> -->
+        <!-- <provider -->
+        <!-- android:name=".content_provider.MyContentProvider" -->
+        <!-- android:authorities="com.abztrakinc.ABZPOS.provider" -->
+        <!-- android:exported="true" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.content.action.PROVIDER_CHANGED" /> -->
+        <!-- <data android:scheme="content" android:host="com.abztrakinc.ABZPOS.provider" /> -->
+        <!-- </intent-filter> -->
+        <!-- </provider> -->
+        <!-- <provider -->
+        <!-- android:name="com.abztrakinc.ABZPOS.content_provider.MyContentProvider" -->
+        <!-- android:authorities="com.abztrakinc.ABZPOS" -->
+        <!-- android:exported="true" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.content.action.PROVIDER_CHANGED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </provider> -->
+        <provider
+            android:name=".content_provider.MyContentProvider"
+            android:authorities="com.abztrakinc.ABZPOS.provider"
+            android:exported="true"
+            android:grantUriPermissions="true">
+            <intent-filter>
+                <action android:name="android.content.action.PROVIDER_CHANGED" />
+            </intent-filter>
+        </provider>
+
+        <activity
+            android:name=".ADMIN.other_configuration"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.admin_sftp"
+            android:exported="false" />
+        <activity
+            android:name=".Diner.diner_table_selection"
+            android:exported="true" >
+
+
+        </activity>
+        <activity
+            android:name=".ADMIN.activity_admin_bank_payment"
+            android:exported="true" /> <!-- TRANSFER IN -->
+        <activity
+            android:name=".ADMIN.admin_stock_receiving"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" /> <!-- TRANSFER OUT -->
+        <activity
+            android:name=".ADMIN.admin_stock_transfer_out"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity> <!-- STOCK CARD -->
+        <activity
+            android:name=".ADMIN.admin_stock_card"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity> <!-- POS PRINTER -->
+        <activity
+            android:name=".ADMIN.admin_pos_printer_settings"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity> <!-- Discount SUmmary -->
+        <activity
+            android:name=".ADMIN.admin_discount_summary"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.admin_manage_other_payment"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.admin_pos_settings_discount"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".USBPrinter.test_usb_print"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name=".ADMIN.admin_backup"
+            android:exported="false" />
+        <activity
+            android:name=".LOGIN.splash_screen"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+
+            <!-- android:screenOrientation="landscape" -->
+
+        </activity>
+
+        <service
+            android:name=".ADMIN.AppService"
+            android:stopWithTask="false" />
+
+        <receiver
+            android:name=".ADMIN.cashbox_settings_class"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="APP_SPECIFIC_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".startupOnBootUpReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ADMIN.admin_audit_trail"
+            android:exported="true"
+            android:label="" /> <!-- //CHECK SALES -->
+        <activity
+            android:name=".CASHIER.cashier_shift_check_sales"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".ADMIN.admin_manage_report"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.admin_pos_settings"
+            android:exported="true"
+            android:parentActivityName=".ADMIN.adminMain"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ADMIN.adminMain" />
+        </activity>
+        <activity
+            android:name=".CASHIER.cashier_cash"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.admin_manage_journal"
+            android:exported="true"
+            android:label="Manage Journal" />
+        <activity
+            android:name=".ADMIN.admin_manage_receipt"
+            android:exported="true"
+            android:label="MANAGE RECEIPT">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity> <!-- CASHIER ACTIVITY -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="sensor"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".ADMIN.admin_manage_product"
+            android:exported="true"
+            android:label=""
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".ORDERSTATION.ordering_station_main"
+            android:exported="true" />
+        <activity
+            android:name=".ADMIN.admin_manage_staff"
+            android:exported="true"
+            android:label="MANAGE STAFF"
+            android:windowSoftInputMode="adjustPan|adjustResize" /> <!-- ADMIN -->
+        <activity
+            android:name=".ADMIN.adminMain"
+            android:exported="true"
+            android:label="ADMIN MENU"
+            android:parentActivityName=".LOGIN.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LOGIN.LoginActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity> <!-- ORDER STATION -->
+        <activity
+            android:name=".ORDERSTATION.ordering_station"
+            android:exported="true" /> <!-- //LOGIN -->
+        <activity
+            android:name=".ADMIN.FileBrowseActivity"
+            android:exported="true" /> <!-- //LOGIN -->
+        <activity
+            android:name=".LOGIN.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:label="ABZPOSS"
+            android:theme="@style/Theme.MyApplication.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.gms.auth.api.signin.client_id"
+            android:value="294433670786-tte3iti4ivmf3ncd4k2cd52b3egfkeg7.apps.googleusercontent.com" />
+    </application>
+
+</manifest>

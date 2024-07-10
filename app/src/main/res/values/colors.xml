@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#C1C1C1</color>
+    <color name="transparent">#000000</color>
+
+
+    <color name="teagreen">#D0F0C0</color>
+
+
+    //Mark's custom colors
+    <color name="myColorBackgroundOrange">#f44336</color>
+    <color name="myColorBackgroundOrange2">#8E1600</color>
+    <color name="myColorBackgroundOrange3">#9e1a1a</color>
+    <color name="myColorBackgroundOrange4">#000000</color>
+
+
+    <color name="myColorBackgroundWhite">#f1f1f1</color>
+    <color name="myColorLoginEditText">#f47857</color>
+    <color name="myColorLoginEditTextDisabled">#e26a4a</color>
+    <color name="myColorLoginButton">#ff9c00</color>
+    <color name="myColorDontHaveAccount">#feab97</color>
+    <color name="myColorWhite">#ffffff</color>
+    <color name="myColorIconLock">#ffce9c</color>
+    <color name="myColorIconAdminPriveleges">#ffe1b1</color>
+    <color name="myColorActionBar">#e9291a</color>
+
+
+    <color name="myColorEditTextDialog">#a8a8a8</color>
+    <color name="myColorBGforRecyclerView">#e6e6e6</color>
+    <color name="myColorEditTextDialogDisable">#7b7b7b</color>
+    <color name="myColorDialogBG">#cacaca</color>
+    <color name="myColorStatusBar">#da2214</color>
+    <color name="myColorButtonPressed">#ff6f0f</color>
+
+    //FOR CASHIER INTERFACE
+    <color name="myColorEditTextCash">#bcbcbc</color>
+    <color name="myColorButtonDelete">#a6a6a6</color>
+    <color name="myColorHeading">#cecece</color>
+    <color name="myColorBackgroundCashier">#e1e1e1</color>
+    <color name="myColorCardViewCashier">#eef0f1</color>
+    <color name="myColorTotal">#ffa8a8</color>
+    <color name="myColorFont">#bfbfbf</color>
+    <color name="myColorButtonPaymentMode">#95b6cc</color>
+    <color name="myColorButtonPaymentModePressed">#6a91ab</color>
+    <color name="myColorDisableCashierButton">#f1ca8e</color>
+
+    <color name="myColorButtonBlack">#000000</color>
+
+
+    <color name="colorPrimary">#024265</color>
+    <color name="colorPrimaryDark">#024265</color>
+    <color name="colorAccent">#05af9b</color>
+
+    <color name="color_one">#fb7268</color>
+    <color name="color_white">#ededf2</color>
+    <color name="color_two">#E3E0E0</color>
+
+    <color name="R">#FFA726</color>
+    <color name="Python">#66BB6A</color>
+    <color name="CPP">#EF5350</color>
+    <color name="Java">#29B6F6</color>
+
+    <color name="checkout">#3bb143</color>
+
+
+
+    //bir report
+    <color name="BIRGray">#d3d3d3</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+
+</resources>

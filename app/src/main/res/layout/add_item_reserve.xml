@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/imgb_exit"
+                android:src="@drawable/ic_baseline_close_24"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_labelKeypad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:textStyle="bold"
+
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="ADD NEW RESERVE ITEM"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_reserveID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:editable="false"
+
+
+                android:inputType="textCapCharacters"
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_reserveName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:hint="Reserve Button Name"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_reserveDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:hint="Reserve Item Description"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_reserveAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:digits="0123456789."
+                android:hint="Amount"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/etCreditExpiry"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="7dp"-->
+<!--                android:background="@drawable/custom_edittext_dialog"-->
+<!--                android:elevation="2dp"-->
+<!--                android:hint="Credit Card Expiry"-->
+<!--                android:inputType="number"-->
+<!--                android:textColor="@color/myColorEditTextDialogDisable"-->
+<!--                android:textColorHint="@color/myColorDialogBG" />-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_reserveCatgID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:editable="false"
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_reserveSubCatgID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_edittext_dialog"
+                android:elevation="2dp"
+                android:editable="false"
+                android:textColor="@color/myColorEditTextDialogDisable"
+                android:textColorHint="@color/myColorDialogBG" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_addNewReserve"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/custom_button_dialog"
+                    android:elevation="2dp"
+                    android:text="ADD AS RESERVED BUTTON"
+                    android:textColor="@color/myColorBackgroundWhite"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
